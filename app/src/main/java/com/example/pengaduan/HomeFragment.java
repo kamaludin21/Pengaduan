@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import static maes.tech.intentanim.CustomIntent.customType;
+
 public class HomeFragment extends Fragment {
 
     FloatingActionButton add;
@@ -36,6 +38,8 @@ public class HomeFragment extends Fragment {
 
         Intent i = new Intent(getActivity(), FormActivity.class);
         startActivity(i);
+        customType(getActivity(),"up-to-bottom");
+
     }
 
 }

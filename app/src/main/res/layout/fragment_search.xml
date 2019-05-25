@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Petunjuk"
+        android:fontFamily="@font/opensanslight"
         android:layout_below="@id/form_search"
         android:layout_alignParentRight="true"/>
 
@@ -30,7 +31,8 @@
             android:drawableEnd="@drawable/ic_search"
             android:drawableTint="@color/colorPrimaryDark"
             android:textColor="@color/colorGrey"
-            android:hint="Pencarian"/>
+            android:hint="Pencarian"
+            android:fontFamily="@font/opensanslight"/>
 
     </android.support.design.widget.TextInputLayout>
 

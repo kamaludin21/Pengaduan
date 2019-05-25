@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -23,7 +22,8 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:textColor="@color/colorGrey"
-            android:hint="Nama"/>
+            android:hint="Nama"
+            android:fontFamily="@font/opensanslight"/>
 
     </android.support.design.widget.TextInputLayout>
 
@@ -40,6 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
+            android:fontFamily="@font/opensanslight"
             android:textColor="@color/colorGrey"
             android:hint="NIM/NIP"/>
 
@@ -58,6 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
+            android:fontFamily="@font/opensanslight"
             android:textColor="@color/colorGrey"
             android:hint="Alamat Email"/>
 
@@ -69,28 +71,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
+        android:fontFamily="@font/opensanslight"
         android:text="Pilih Kategori"/>
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/form_spinner"
+
+    <Spinner
+        android:id="@+id/spinner1"
         android:layout_below="@id/label_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp">
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        />
 
-        <Spinner
-            android:id="@+id/spinner1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            />
 
-    </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/form_text"
-        android:layout_below="@id/form_spinner"
+        android:layout_below="@id/spinner1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -100,7 +98,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/colorGrey"
-            android:lines="2"
+            android:fontFamily="@font/opensanslight"
+            android:lines="3"
             android:hint="Keluhan anda"/>
 
     </android.support.design.widget.TextInputLayout>
@@ -120,6 +119,7 @@
             android:layout_height="59dp"
             android:backgroundTint="@color/colorAccent"
             android:text="Kirim"
+            android:fontFamily="@font/opensansregular"
             android:textColor="#fff" />
 
     </RelativeLayout>

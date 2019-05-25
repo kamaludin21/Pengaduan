@@ -7,11 +7,6 @@
         android:icon="@drawable/ic_home"
         android:title="Beranda"/>
 
-    <!--<item-->
-        <!--android:id="@+id/nav_add"-->
-        <!--android:icon="@drawable/ic_add_box"-->
-        <!--android:title="Aduan"/>-->
-
     <item
         android:id="@+id/nav_search"
         android:icon="@drawable/ic_search"
