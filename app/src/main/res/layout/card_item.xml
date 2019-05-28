@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:isScrollContainer="true"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="3dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_kategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Kategori"
+                android:fontFamily="@font/opensansregular"
+                android:textSize="18dp"
+                android:textFontWeight="2"/>
+
+            <TextView
+                android:id="@+id/tv_tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2019-09-12 18:09:09"
+                android:textSize="14sp"
+                android:fontFamily="@font/opensanssemibold"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:fontFamily="@font/opensansregular"
+                android:text="Pertanyaan :"/>
+
+            <TextView
+                android:id="@+id/tv_tanya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensanslight"
+                android:textSize="12sp"
+                android:text="@string/answer" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_alignParentEnd ="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:text="Detail"
+                    android:fontFamily="@font/opensansregular"
+                    android:textColor="@color/colorOrange"
+                    style="@style/Widget.AppCompat.Button.Borderless"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
