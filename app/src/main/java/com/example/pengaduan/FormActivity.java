@@ -88,7 +88,7 @@ public class FormActivity extends AppCompatActivity implements AdapterView.OnIte
 
                     Boolean success = response.body().getSuccess();
                     if(success) {
-                        Toast.makeText(FormActivity.this, response.body().getMessage(),Toast.LENGTH_SHORT).show();
+                        Toast.makeText(FormActivity.this, "Aduan diterima, cek email anda",Toast.LENGTH_SHORT).show();
                         finish();
 //                      // back to main activity
                     } else {

@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textCapSentences"
-            android:textColor="@color/colorGrey"
+            android:textColor="@color/textForm"
             android:hint="Nama"
             android:fontFamily="@font/opensanslight"/>
 
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:inputType="number"
             android:fontFamily="@font/opensanslight"
-            android:textColor="@color/colorGrey"
+            android:textColor="@color/textForm"
             android:hint="NIM/NIP"/>
 
     </android.support.design.widget.TextInputLayout>
@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:fontFamily="@font/opensanslight"
-            android:textColor="@color/colorGrey"
+            android:textColor="@color/textForm"
             android:hint="Alamat Email"/>
 
     </android.support.design.widget.TextInputLayout>
@@ -98,7 +98,7 @@
             android:id="@+id/et_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorGrey"
+            android:textColor="@color/textForm"
             android:fontFamily="@font/opensanslight"
             android:inputType="textMultiLine"
             android:minLines="3"
