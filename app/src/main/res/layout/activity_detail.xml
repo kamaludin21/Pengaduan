@@ -1,9 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="20dp"
     tools:context=".DetailActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/title"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/opensanssemibold"
+        android:text="Detail Aduan"/>
+
+    <TextView
+        android:id="@+id/dt_kategoir"
+        android:layout_below="@id/title"
+        android:textStyle="bold"
+        android:fontFamily="@font/opensansregular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Kategori Pertanyaan"/>
+
+    <TextView
+        android:id="@+id/view_kategori"
+        android:layout_below="@id/dt_kategoir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/opensanslight"
+        android:text="Internet"/>
+
+    <TextView
+        android:id="@+id/dt_tanggal"
+        android:layout_below="@id/view_kategori"
+        android:textStyle="bold"
+        android:fontFamily="@font/opensansregular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Dijawab pada :"/>
+
+    <TextView
+        android:id="@+id/view_tanggal"
+        android:layout_below="@id/dt_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/opensanslight"
+        android:text="2019"/>
+
+    <TextView
+        android:id="@+id/dt_tanya"
+        android:layout_below="@id/view_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="@font/opensansregular"
+        android:textSize="18sp"
+        android:text="Pertanyaan :"/>
+
+    <TextView
+        android:id="@+id/view_tanya"
+        android:layout_below="@id/dt_tanya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensanslight"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/answer"/>
+
+    <TextView
+        android:id="@+id/dt_tanggap"
+        android:layout_below="@+id/view_tanya"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensansregular"
+        android:textSize="18sp"
+        android:text="Tanggapan :"/>
+    <TextView
+        android:id="@+id/view_tanggap"
+        android:layout_below="@id/dt_tanggap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/opensanslight"
+        android:textSize="16sp"
+        android:text="@string/answer"/>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_button"
+        android:layout_below="@id/view_tanggap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:backgroundTint="@color/colorAccent"
+            android:text="Kembali"
+            android:fontFamily="@font/opensansregular"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

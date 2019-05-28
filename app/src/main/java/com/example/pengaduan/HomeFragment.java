@@ -51,7 +51,22 @@ public class HomeFragment extends Fragment implements MainView {
 
         itemCLickListener = (((view, position) -> {
             String kategori = form.get(position).getKategori();
-            Toast.makeText(getActivity(), kategori, Toast.LENGTH_SHORT).show();
+            String tanggapan = form.get(position).getTanggapan();
+            String masalah = form.get(position).getMasalah();
+            String tanggal = form.get(position).getTanggal();
+
+
+            Intent i = new Intent(getActivity(), DetailActivity.class);
+
+            i.putExtra("kategori", kategori);
+            i.putExtra("tanggal", tanggal);
+            i.putExtra("masalah", masalah);
+            i.putExtra("tanggapan", tanggapan);
+
+
+            startActivity(i);
+            customType(getActivity(),"bottom-to-up");
+
         }));
 
         add.setOnClickListener(new View.OnClickListener() {

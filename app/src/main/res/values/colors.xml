@@ -5,6 +5,6 @@
     <color name="colorAccent">#00574B</color>
     <color name="colorOrange">#FF5722</color>
     <color name="colorWhite">#FFFFFF</color>
-    <color name="colorGrey">#CCCECF</color>
+    <color name="colorGrey">#F0F0F0</color>
     <color name="textForm">#292929</color>
 </resources>

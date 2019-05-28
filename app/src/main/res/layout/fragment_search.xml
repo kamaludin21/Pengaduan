@@ -2,39 +2,11 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingStart="10dp"
-    android:paddingEnd="10dp"
-    android:paddingTop="10dp">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tv_info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Petunjuk"
-        android:fontFamily="@font/opensanslight"
-        android:layout_below="@id/form_search"
-        android:layout_alignParentRight="true"/>
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/form_search"
+    <WebView
+        android:id="@+id/web_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/et_token"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:drawableEnd="@drawable/ic_search"
-            android:drawableTint="@color/colorPrimaryDark"
-            android:textColor="@color/colorGrey"
-            android:hint="Pencarian"
-            android:fontFamily="@font/opensanslight"/>
-
-    </android.support.design.widget.TextInputLayout>
-
+        android:layout_height="match_parent"/>
 
 </RelativeLayout>

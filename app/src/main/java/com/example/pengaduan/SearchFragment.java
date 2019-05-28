@@ -8,36 +8,37 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 public class SearchFragment extends Fragment {
 
-    TextView tv_info;
+    private static final String URL = "https://tashih-arabic.com/web-pengaduan/api/track.php";
+
+    WebView mWebView;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_search, container, false);
 
-        tv_info = (TextView) v.findViewById(R.id.tv_info);
+        mWebView = v.findViewById(R.id.web_view);
+        mWebView.loadUrl(URL);
 
-        tv_info.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openDialog();
-            }
-        });
+        // Enable Javascript
+        WebSettings webSettings = mWebView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        // Force links and redirects to open in the WebView instead of in a browser
+        mWebView.setWebViewClient(new WebViewClient());
 
         ((MainActivity) getActivity()).setActionBarTitle("Pencarian");
 
         return v;
     }
 
-    public void openDialog() {
-        ExampleDialog exampleDialog = new ExampleDialog();
-        exampleDialog.show(getFragmentManager(), "example dialog");
-    }
 
 
 
