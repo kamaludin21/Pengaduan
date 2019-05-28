@@ -17,10 +17,10 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/et_nama"
+            android:id="@+id/nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
+            android:inputType="textCapSentences"
             android:textColor="@color/colorGrey"
             android:hint="Nama"
             android:fontFamily="@font/opensanslight"/>
@@ -36,7 +36,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/et_nomor"
+            android:id="@+id/nim"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -55,7 +55,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
         <android.support.design.widget.TextInputEditText
-            android:id="@+id/et_email"
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -70,25 +70,26 @@
         android:layout_below="@id/form_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="5dp"
         android:fontFamily="@font/opensanslight"
         android:text="Pilih Kategori"/>
 
 
     <Spinner
-        android:id="@+id/spinner1"
+        android:id="@+id/kategori"
         android:layout_below="@id/label_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
+        android:layout_marginBottom="10dp"
         />
 
 
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/form_text"
-        android:layout_below="@id/spinner1"
+        android:layout_below="@id/kategori"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
@@ -99,7 +100,8 @@
             android:layout_height="wrap_content"
             android:textColor="@color/colorGrey"
             android:fontFamily="@font/opensanslight"
-            android:lines="3"
+            android:inputType="textMultiLine"
+            android:minLines="3"
             android:hint="Keluhan anda"/>
 
     </android.support.design.widget.TextInputLayout>

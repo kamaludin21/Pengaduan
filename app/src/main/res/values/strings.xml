@@ -6,11 +6,12 @@
 
     <!-- For Spinner -->
     <string-array name="numbers">
-        <item>One</item>
-        <item>Two</item>
-        <item>Three</item>
-        <item>Four</item>
-        <item>Five</item>
+        <item>Internet</item>
+        <item>KKN</item>
+        <item>Iraise</item>
+        <item>LPPM</item>
+        <item>Perpustakaan</item>
+        <item>Pembayaran UKT</item>
     </string-array>
 
 </resources>
